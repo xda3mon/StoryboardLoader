@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.17" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.14"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Another-->
+        <scene sceneID="IkX-Yw-zcV">
+            <objects>
+                <viewController storyboardIdentifier="AnotherViewController" id="cpn-LT-lgj" customClass="AnotherViewController" customModule="Storyboard" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="VeV-aa-Zg7"/>
+                        <viewControllerLayoutGuide type="bottom" id="tUf-fY-dw5"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="9Kj-3k-de0">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Another" id="W3u-dD-atJ"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="a9D-P9-YEy" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-10" y="-22"/>
+        </scene>
+    </scenes>
+</document>
