@@ -1,4 +1,3 @@
-
 Pod::Spec.new do |s|
 
  s.name          = 'StoryboardLoader'
@@ -13,6 +12,6 @@ Pod::Spec.new do |s|
  s.framework     = 'UIKit'
  s.requires_arc  = true
  s.ios.deployment_target = '10.0'
+
 end
-~                                                                                                                                                                                 
-~                        
+~    
