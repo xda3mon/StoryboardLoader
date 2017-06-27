@@ -38,13 +38,13 @@ extension UIViewController: Identifiable {}
  */
 
 /// storyboard ID of the view controller must be equal to the name of its class Type.
-protocol StoryboardLoader {
+public protocol StoryboardLoader {
     
     associatedtype ViewController: UIViewController
     var value: ViewController { get }
 }
 
-extension StoryboardLoader where Self: RawRepresentable, Self.RawValue == String {
+public extension StoryboardLoader where Self: RawRepresentable, Self.RawValue == String {
     
     var value: ViewController {
         
