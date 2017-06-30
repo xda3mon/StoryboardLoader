@@ -24,7 +24,7 @@ extension UIViewController: Identifiable {}
     case main = "Main"
  }
  
- struct Storyboard<T: UIViewController>: RawRepresentable, StoryboardLoader {
+ struct Storyboard<T: UIViewController>: StoryboardLoader {
  
      static var main: StoryboardStruct<T> { return Storyboard<T>(rawValue: "Main")! }
  
@@ -38,13 +38,13 @@ extension UIViewController: Identifiable {}
  */
 
 /// storyboard ID of the view controller must be equal to the name of its class Type.
-public protocol StoryboardLoader {
+public protocol StoryboardLoader: RawRepresentable {
     
     associatedtype ViewController: UIViewController
     var value: ViewController { get }
 }
 
-public extension StoryboardLoader where Self: RawRepresentable, Self.RawValue == String {
+public extension StoryboardLoader where RawValue == String {
     
     var value: ViewController {
         
@@ -56,3 +56,4 @@ public extension StoryboardLoader where Self: RawRepresentable, Self.RawValue ==
         fatalError("cannot load viewController with storyboard name: \(rawValue), identifier: \(ViewController.identifier)")
     }
 }
+
