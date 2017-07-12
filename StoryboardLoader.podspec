@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
 
  s.name          = 'StoryboardLoader'
- s.version       = '0.0.3'
+ s.version       = '0.0.4'
  s.license       = 'MIT'
  s.summary       = 'A way to load a view controller from UIStoryboard with Swift for iOS'
  s.homepage      = 'https://github.com/287258813/StoryboardLoader'
