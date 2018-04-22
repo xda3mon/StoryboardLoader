@@ -39,21 +39,32 @@ extension UIViewController: Identifiable {}
 
 /// storyboard ID of the view controller must be equal to the name of its class Type.
 public protocol StoryboardLoader: RawRepresentable {
-    
-    associatedtype ViewController: UIViewController
-    var value: ViewController { get }
 }
 
 public extension StoryboardLoader where RawValue == String {
     
-    var value: ViewController {
+    func instantiateInitialViewController() -> UIViewController {
         
-        if let vc = UIStoryboard(name: rawValue, bundle: nil)
-            .instantiateViewController(withIdentifier: ViewController.identifier)
-            as? ViewController {
+        if
+            let vc = UIStoryboard(name: rawValue, bundle: nil)
+                .instantiateInitialViewController() {
             return vc
         }
+        
+        fatalError("cannot load initialViewController with storyboard name: \(rawValue), identifier: \(ViewController.identifier)")
+    }
+    
+    func instantiateViewController<ViewController>() -> ViewController where ViewController: UIViewController {
+        
+        if
+            let vc = UIStoryboard(name: rawValue, bundle: nil)
+                .instantiateViewController(withIdentifier: ViewController.identifier)
+                as? ViewController {
+            return vc
+        }
+        
         fatalError("cannot load viewController with storyboard name: \(rawValue), identifier: \(ViewController.identifier)")
     }
 }
+
 
