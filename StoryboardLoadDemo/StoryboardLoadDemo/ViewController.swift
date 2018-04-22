@@ -13,7 +13,11 @@ import UIKit
 /// storyboard ID of the view controller must be equal to the name of its class Type.
 /// storyboard ID of the view controller must be equal to the name of its class Type.
 
-enum Storyboard<T: UIViewController>: String, StoryboardLoader {
+enum Storyboard<T>:
+    String,
+    StoryboardLoader
+    where T: UIViewController {
+    
     typealias ViewController = T
     case one = "One"
     case another = "Another"
