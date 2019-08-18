@@ -12,7 +12,7 @@
 		914EE58C1EF57ED8004A67E7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 914EE58A1EF57ED8004A67E7 /* LaunchScreen.storyboard */; };
 		914EE5971EF57ED8004A67E7 /* StoryboardLoadDemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 914EE5961EF57ED8004A67E7 /* StoryboardLoadDemoTests.swift */; };
 		914EE5A21EF57ED8004A67E7 /* StoryboardLoadDemoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 914EE5A11EF57ED8004A67E7 /* StoryboardLoadDemoUITests.swift */; };
-		91513A34208CD5D100679E48 /* StoryboardLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91513A33208CD5D100679E48 /* StoryboardLoader.swift */; };
+		91513A34208CD5D100679E48 /* NibLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91513A33208CD5D100679E48 /* NibLoader.swift */; };
 		91C7AEDF1EF58296002E44B5 /* One.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 91C7AEDE1EF5827D002E44B5 /* One.storyboard */; };
 		91C7AEE01EF58296002E44B5 /* Another.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 91C7AEDD1EF581F2002E44B5 /* Another.storyboard */; };
 		91C7AEE21EF582A2002E44B5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91C7AEDC1EF581F2002E44B5 /* ViewController.swift */; };
@@ -47,7 +47,7 @@
 		914EE59D1EF57ED8004A67E7 /* StoryboardLoadDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = StoryboardLoadDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		914EE5A11EF57ED8004A67E7 /* StoryboardLoadDemoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryboardLoadDemoUITests.swift; sourceTree = "<group>"; };
 		914EE5A31EF57ED8004A67E7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		91513A33208CD5D100679E48 /* StoryboardLoader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = StoryboardLoader.swift; path = ../../Source/StoryboardLoader.swift; sourceTree = "<group>"; };
+		91513A33208CD5D100679E48 /* NibLoader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NibLoader.swift; path = ../../Source/NibLoader.swift; sourceTree = "<group>"; };
 		91C7AEDC1EF581F2002E44B5 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		91C7AEDD1EF581F2002E44B5 /* Another.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Another.storyboard; sourceTree = "<group>"; };
 		91C7AEDE1EF5827D002E44B5 /* One.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = One.storyboard; sourceTree = "<group>"; };
@@ -102,7 +102,7 @@
 			isa = PBXGroup;
 			children = (
 				91C7AEDD1EF581F2002E44B5 /* Another.storyboard */,
-				91513A33208CD5D100679E48 /* StoryboardLoader.swift */,
+				91513A33208CD5D100679E48 /* NibLoader.swift */,
 				914EE5811EF57ED8004A67E7 /* AppDelegate.swift */,
 				914EE5881EF57ED8004A67E7 /* Assets.xcassets */,
 				914EE58D1EF57ED8004A67E7 /* Info.plist */,
@@ -265,7 +265,7 @@
 			files = (
 				91C7AEE21EF582A2002E44B5 /* ViewController.swift in Sources */,
 				914EE5821EF57ED8004A67E7 /* AppDelegate.swift in Sources */,
-				91513A34208CD5D100679E48 /* StoryboardLoader.swift in Sources */,
+				91513A34208CD5D100679E48 /* NibLoader.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
