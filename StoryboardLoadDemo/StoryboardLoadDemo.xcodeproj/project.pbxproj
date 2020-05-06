@@ -12,10 +12,13 @@
 		914EE58C1EF57ED8004A67E7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 914EE58A1EF57ED8004A67E7 /* LaunchScreen.storyboard */; };
 		914EE5971EF57ED8004A67E7 /* StoryboardLoadDemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 914EE5961EF57ED8004A67E7 /* StoryboardLoadDemoTests.swift */; };
 		914EE5A21EF57ED8004A67E7 /* StoryboardLoadDemoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 914EE5A11EF57ED8004A67E7 /* StoryboardLoadDemoUITests.swift */; };
-		91513A34208CD5D100679E48 /* NibLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91513A33208CD5D100679E48 /* NibLoader.swift */; };
 		91C7AEDF1EF58296002E44B5 /* One.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 91C7AEDE1EF5827D002E44B5 /* One.storyboard */; };
 		91C7AEE01EF58296002E44B5 /* Another.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 91C7AEDD1EF581F2002E44B5 /* Another.storyboard */; };
 		91C7AEE21EF582A2002E44B5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91C7AEDC1EF581F2002E44B5 /* ViewController.swift */; };
+		CEF3524A24626C6600D9B31E /* NibLoader.h in Headers */ = {isa = PBXBuildFile; fileRef = CEF3524824626C6600D9B31E /* NibLoader.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CEF3524D24626C6600D9B31E /* NibLoader.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEF3524624626C6600D9B31E /* NibLoader.framework */; };
+		CEF3524E24626C6600D9B31E /* NibLoader.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = CEF3524624626C6600D9B31E /* NibLoader.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		CEF3525424626D0500D9B31E /* NibLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEF3525324626D0500D9B31E /* NibLoader.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -33,7 +36,28 @@
 			remoteGlobalIDString = 914EE57D1EF57ED8004A67E7;
 			remoteInfo = StoryboardLoadDemo;
 		};
+		CEF3524B24626C6600D9B31E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 914EE5761EF57ED8004A67E7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CEF3524524626C6600D9B31E;
+			remoteInfo = NibLoader;
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		CEF3524F24626C6600D9B31E /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				CEF3524E24626C6600D9B31E /* NibLoader.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		914EE57E1EF57ED8004A67E7 /* StoryboardLoadDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StoryboardLoadDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -47,10 +71,13 @@
 		914EE59D1EF57ED8004A67E7 /* StoryboardLoadDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = StoryboardLoadDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		914EE5A11EF57ED8004A67E7 /* StoryboardLoadDemoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryboardLoadDemoUITests.swift; sourceTree = "<group>"; };
 		914EE5A31EF57ED8004A67E7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		91513A33208CD5D100679E48 /* NibLoader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NibLoader.swift; path = ../../Source/NibLoader.swift; sourceTree = "<group>"; };
 		91C7AEDC1EF581F2002E44B5 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		91C7AEDD1EF581F2002E44B5 /* Another.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Another.storyboard; sourceTree = "<group>"; };
 		91C7AEDE1EF5827D002E44B5 /* One.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = One.storyboard; sourceTree = "<group>"; };
+		CEF3524624626C6600D9B31E /* NibLoader.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = NibLoader.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CEF3524824626C6600D9B31E /* NibLoader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NibLoader.h; sourceTree = "<group>"; };
+		CEF3524924626C6600D9B31E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CEF3525324626D0500D9B31E /* NibLoader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NibLoader.swift; path = ../../Source/NibLoader.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +85,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CEF3524D24626C6600D9B31E /* NibLoader.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -75,12 +103,20 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		CEF3524324626C6600D9B31E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
 		914EE5751EF57ED8004A67E7 = {
 			isa = PBXGroup;
 			children = (
+				CEF3524724626C6600D9B31E /* NibLoader */,
 				914EE57F1EF57ED8004A67E7 /* Products */,
 				914EE5801EF57ED8004A67E7 /* StoryboardLoadDemo */,
 				914EE5951EF57ED8004A67E7 /* StoryboardLoadDemoTests */,
@@ -94,6 +130,7 @@
 				914EE57E1EF57ED8004A67E7 /* StoryboardLoadDemo.app */,
 				914EE5921EF57ED8004A67E7 /* StoryboardLoadDemoTests.xctest */,
 				914EE59D1EF57ED8004A67E7 /* StoryboardLoadDemoUITests.xctest */,
+				CEF3524624626C6600D9B31E /* NibLoader.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -102,7 +139,6 @@
 			isa = PBXGroup;
 			children = (
 				91C7AEDD1EF581F2002E44B5 /* Another.storyboard */,
-				91513A33208CD5D100679E48 /* NibLoader.swift */,
 				914EE5811EF57ED8004A67E7 /* AppDelegate.swift */,
 				914EE5881EF57ED8004A67E7 /* Assets.xcassets */,
 				914EE58D1EF57ED8004A67E7 /* Info.plist */,
@@ -131,7 +167,28 @@
 			path = StoryboardLoadDemoUITests;
 			sourceTree = "<group>";
 		};
+		CEF3524724626C6600D9B31E /* NibLoader */ = {
+			isa = PBXGroup;
+			children = (
+				CEF3524824626C6600D9B31E /* NibLoader.h */,
+				CEF3525324626D0500D9B31E /* NibLoader.swift */,
+				CEF3524924626C6600D9B31E /* Info.plist */,
+			);
+			path = NibLoader;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		CEF3524124626C6600D9B31E /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CEF3524A24626C6600D9B31E /* NibLoader.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
 		914EE57D1EF57ED8004A67E7 /* StoryboardLoadDemo */ = {
@@ -141,10 +198,12 @@
 				914EE57A1EF57ED8004A67E7 /* Sources */,
 				914EE57B1EF57ED8004A67E7 /* Frameworks */,
 				914EE57C1EF57ED8004A67E7 /* Resources */,
+				CEF3524F24626C6600D9B31E /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				CEF3524C24626C6600D9B31E /* PBXTargetDependency */,
 			);
 			name = StoryboardLoadDemo;
 			productName = StoryboardLoadDemo;
@@ -187,6 +246,24 @@
 			productReference = 914EE59D1EF57ED8004A67E7 /* StoryboardLoadDemoUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
+		CEF3524524626C6600D9B31E /* NibLoader */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CEF3525224626C6600D9B31E /* Build configuration list for PBXNativeTarget "NibLoader" */;
+			buildPhases = (
+				CEF3524124626C6600D9B31E /* Headers */,
+				CEF3524224626C6600D9B31E /* Sources */,
+				CEF3524324626C6600D9B31E /* Frameworks */,
+				CEF3524424626C6600D9B31E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = NibLoader;
+			productName = NibLoader;
+			productReference = CEF3524624626C6600D9B31E /* NibLoader.framework */;
+			productType = "com.apple.product-type.framework";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -208,6 +285,11 @@
 						CreatedOnToolsVersion = 9.0;
 						TestTargetID = 914EE57D1EF57ED8004A67E7;
 					};
+					CEF3524524626C6600D9B31E = {
+						CreatedOnToolsVersion = 11.4;
+						LastSwiftMigration = 1140;
+						ProvisioningStyle = Automatic;
+					};
 				};
 			};
 			buildConfigurationList = 914EE5791EF57ED8004A67E7 /* Build configuration list for PBXProject "StoryboardLoadDemo" */;
@@ -226,6 +308,7 @@
 				914EE57D1EF57ED8004A67E7 /* StoryboardLoadDemo */,
 				914EE5911EF57ED8004A67E7 /* StoryboardLoadDemoTests */,
 				914EE59C1EF57ED8004A67E7 /* StoryboardLoadDemoUITests */,
+				CEF3524524626C6600D9B31E /* NibLoader */,
 			);
 		};
 /* End PBXProject section */
@@ -256,6 +339,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		CEF3524424626C6600D9B31E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -265,7 +355,6 @@
 			files = (
 				91C7AEE21EF582A2002E44B5 /* ViewController.swift in Sources */,
 				914EE5821EF57ED8004A67E7 /* AppDelegate.swift in Sources */,
-				91513A34208CD5D100679E48 /* NibLoader.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -285,6 +374,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		CEF3524224626C6600D9B31E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CEF3525424626D0500D9B31E /* NibLoader.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -297,6 +394,11 @@
 			isa = PBXTargetDependency;
 			target = 914EE57D1EF57ED8004A67E7 /* StoryboardLoadDemo */;
 			targetProxy = 914EE59E1EF57ED8004A67E7 /* PBXContainerItemProxy */;
+		};
+		CEF3524C24626C6600D9B31E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CEF3524524626C6600D9B31E /* NibLoader */;
+			targetProxy = CEF3524B24626C6600D9B31E /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -419,6 +521,7 @@
 		914EE5A71EF57ED8004A67E7 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = StoryboardLoadDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -432,6 +535,7 @@
 		914EE5A81EF57ED8004A67E7 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = StoryboardLoadDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -500,6 +604,68 @@
 			};
 			name = Release;
 		};
+		CEF3525024626C6600D9B31E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = NibLoader/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = cn.dumbass.NibLoader;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		CEF3525124626C6600D9B31E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = NibLoader/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = cn.dumbass.NibLoader;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -535,6 +701,15 @@
 			buildConfigurations = (
 				914EE5AD1EF57ED8004A67E7 /* Debug */,
 				914EE5AE1EF57ED8004A67E7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CEF3525224626C6600D9B31E /* Build configuration list for PBXNativeTarget "NibLoader" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CEF3525024626C6600D9B31E /* Debug */,
+				CEF3525124626C6600D9B31E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

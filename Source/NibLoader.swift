@@ -10,26 +10,28 @@ import UIKit
 
 public protocol StoryboardRepresentable {
     
-    associatedtype ViewControllerType : UIViewController
+    associatedtype ViewController : UIViewController
     
     static var storyboardName: String { get }
     static var storyboardID: String { get }
     static var storyboardBundle: Bundle { get }
+    
+    static func storyboardInstance() -> Self.ViewController
 }
 
 public extension StoryboardRepresentable {
-    static var storyboardID: String { return .init(describing: ViewControllerType.self) }
-    static var storyboardBundle: Bundle { return .init(for: ViewControllerType.self) }
+    static var storyboardID: String { return .init(describing: ViewController.self) }
+    static var storyboardBundle: Bundle { return .init(for: ViewController.self) }
 }
 
 
 public extension StoryboardRepresentable where Self : UIViewController {
-    typealias ViewControllerType = Self
+    typealias ViewController = Self
 }
 
 public extension StoryboardRepresentable {
     
-    static func storyboardInstance<ViewController>() -> ViewController where ViewController == Self.ViewControllerType {
+    static func storyboardInstance<ViewController>() -> ViewController where ViewController == Self.ViewController {
         
         if let instance =  UIStoryboard(name: storyboardName, bundle:
             storyboardBundle).instantiateViewController(withIdentifier: storyboardID) as? ViewController {
@@ -46,30 +48,32 @@ public extension StoryboardRepresentable {
 
 public protocol NibRepresentable {
     
-    associatedtype ViewType : UIView
+    associatedtype View : UIView
 
     static var nibName: String { get }
     static var nibBundle: Bundle { get }
     static var nibOwner: Any? { get }
-    static var nibOptions: [AnyHashable: Any]? { get }
+    static var nibOptions: [UINib.OptionsKey : Any]? { get }
     static var nibOffset: Int? { get }
+    
+    static func nibInstance() -> Self.View
 }
 
 public extension NibRepresentable {
-    static var nibName: String { return .init(describing: ViewType.self) }
-    static var nibBundle: Bundle { return .init(for: ViewType.self) }
-    static var nibOwner: Any? { return ViewType.self }
-    static var nibOptions: [AnyHashable: Any]? { return nil }
+    static var nibName: String { return .init(describing: View.self) }
+    static var nibBundle: Bundle { return .init(for: View.self) }
+    static var nibOwner: Any? { return View.self }
+    static var nibOptions: [UINib.OptionsKey : Any]? { return nil }
     static var nibOffset: Int? { return nil }
 }
 
 public extension NibRepresentable where Self : UIView {
-    typealias ViewType = Self
+    typealias View = Self
 }
 
 public extension NibRepresentable {
     
-     static func nibInstance<View>() -> View where View == Self.ViewType {
+    static func nibInstance<View>() -> View where View == Self.View {
         
         let nibs = UINib(nibName: nibName, bundle: nibBundle).instantiate(withOwner: nibOwner, options: nibOptions)
         
